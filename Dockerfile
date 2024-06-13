@@ -3,7 +3,7 @@ ADD . /nopcommerce
 RUN mkdir nopcommerce/published && \
         cd /nopcommerce && \
         dotnet publish -c Release -o /nopcommerce/published /nopcommerce/src/Presentation/Nop.Web/Nop.Web.csproj
-RUN mkdir /nopcommerce/published/bin/logs
+RUN /nopcommerce/published/bin /nopcommerce/published/logs
 
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
 LABEL Author="Farida"
