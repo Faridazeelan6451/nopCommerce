@@ -5,7 +5,6 @@ RUN mkdir nopcommerce/published && \
         dotnet publish -c Release -o /nopcommerce/published /nopcommerce/src/Presentation/Nop.Web/Nop.Web.csproj
 
 RUN mkdir /nopcommerce/published/bin /nopcommerce/published/logs
-RUN /nopcommerce/published/bin /nopcommerce/published/logs
 
 
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
