@@ -7,6 +7,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    expose:
+      - "5000"
   nop-db:
     networks:
       - nop-net
