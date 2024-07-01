@@ -9,6 +9,8 @@ services:
       dockerfile: Dockerfile
     expose:
       - "5000"
+    ports:
+      - "5000"
   nop-db:
     networks:
       - nop-net
